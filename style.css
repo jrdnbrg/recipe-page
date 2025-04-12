@@ -89,7 +89,8 @@ img {
 }
 
 .ingredients-list li::marker,
-.instructions-list li::marker {
+.instructions-list li::marker,
+td strong {
   color: hsl(14, 45%, 36%);
 }
 
@@ -101,21 +102,27 @@ img {
   margin: 30px 0;
 }
 
-.nutrition-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
 }
 
-.nutrition-row * {
-  flex: 1;
-  padding-left: 30px;
-  line-height: 30px;
+tr {
+  border-top: 1px solid hsl(30, 18%, 87%);
 }
 
-.nutrition-row strong {
-  color:hsl(14, 45%, 36%);
-  font-weight: 700;
+
+tr:first-child {
+  border-top: none;
+}
+
+td {
+  padding: 10px 0 10px 30px;
+}
+
+tr:last-child td {
+  padding-bottom: 0;
 }
 
 .attribution { 
