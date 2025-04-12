@@ -51,23 +51,20 @@ hr {
   border-top: 1px solid hsl(30, 18%, 87%);
 }
 
-ul {
+ul,
+ol {
   padding: 0;
   margin-left: 20px;
   margin-bottom: 0;
 }
 
-ul li {
+ul li,
+ol li {
   padding-left: 18px;
 }
 
 ul li::marker {
   font-size: 12px;
-}
-
-ol {
-  padding: 0;
-  margin-left: 20px;
 }
 
 li + li {
@@ -91,8 +88,13 @@ img {
   color: hsl(332, 51%, 32%);
 }
 
-.ingredients-list li::marker {
+.ingredients-list li::marker,
+.instructions-list li::marker {
   color: hsl(14, 45%, 36%);
+}
+
+.instructions-list li::marker {
+  font-weight: 600;
 }
 
 .section-divider {
